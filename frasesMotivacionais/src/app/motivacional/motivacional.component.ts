@@ -25,13 +25,15 @@ export class MotivacionalComponent {
           frase,
           autor,
         };
-        this.translate(frase);
+     //this.translate(frase);
       },
       error: (error) => {
         console.error(error);
       },
     });
   }
+
+  /*
 
   translate(frase: string): void {
     this.motiva.traduzirFrase(frase, 'pt-br').subscribe({
@@ -46,6 +48,8 @@ export class MotivacionalComponent {
       },
     });
   }
+
+  */
 
   newPhrase(): void {
     this.loadMotivationalQuote();
